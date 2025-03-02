@@ -9,12 +9,14 @@
 let btn = document.querySelector('#new-quote');
 let quote = document.querySelector('.quote');
 let author = document.querySelector('.author');
-
+let header = document.querySelector('.header');
+let mainContent = document.querySelector('.main-content');
+let button = document.querySelector('.new-quote');
 
 // List of quotes and authors
 const quotes = [
     { quote: `"The only limit to our realization of tomorrow is our doubts of today."`, 
-      author: "Franklin D. Roosevelt" },
+      author: "Franklin D. Roosevelt"},
     { quote: `"In the middle of every difficulty lies opportunity."`, 
       author: "Albert Einstein" },
     { quote: `"Success is not the key to happiness. Happiness is the key to success."`, 
@@ -75,9 +77,14 @@ const quotes = [
       author: "George Addair" },
 ];
 
+
+const headStyles = [
+  {borderColor: "green", textColor: "#ffff", bgColor: "black"},
+  {borderColor: "yellow", bgColor: "#", textColor: "#FFFFFF"},
+
+]
 btn.addEventListener('click', function(){
     let random = Math.floor(Math.random() * quotes.length);
-
     quote.innerText = quotes[random].quote;
     author.innerText = quotes[random].author;
 
