@@ -12,7 +12,7 @@ body{
     align-items: center;
     height: 100vh;
     text-align:  center;
-    background: linear-gradient(rgba(255, 0, 0, 0.5), rgba(0, 0, 255, 0.5)), url(img/Ball\ library.jpg) no-repeat center center/ cover;
+    background: linear-gradient(rgba(107, 103, 103, 0.5), rgba(116, 116, 182, 0.5)), url(img/Ball\ library.jpg) no-repeat center center/ cover;
 
 }
 .container {
@@ -22,7 +22,7 @@ height: 450px;
 
 .header {
     font-size: 1.2rem;
-    border: solid 2px rgb(31, 31, 228);
+    border: solid 2px rgb(238, 44, 10);
     color: #fff;
     background-color: #000;
     padding: 5px;
@@ -37,7 +37,7 @@ height: 450px;
     background-color: #fff;
     border-radius: 15px;
     padding: 50px 40px;
-    box-shadow: blue 0 0 10px;
+    box-shadow: rgb(238, 44, 10) 0 0 10px;
 }
 
 .main-content .text-area {
@@ -48,7 +48,7 @@ height: 450px;
 
 .main-content .author {
     font-size: 1.6rem;
-    color: red;
+    color:  red;
     text-transform: uppercase;
     margin-top: 20px;
 
@@ -62,6 +62,6 @@ height: 450px;
     margin-top: 20px;
     border-radius: 5px;
     border: none;
-    border: 2px solid blue;
+    border: 2px solid  rgb(238, 44, 10);
     cursor: pointer;
 }
