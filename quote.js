@@ -75,21 +75,22 @@ const quotes = [
       author: "Lao Tzu" },
     { quote: `"Everything you’ve ever wanted is on the other side of fear."`, 
       author: "George Addair" },
+
 ];
 
 
 const headStyles = [
-  {borderColor: "#FF5733", textColor: "#FFFFFF", bgColor: "1C1C1C"},
-  {borderColor: "#4A90E2", textColor: "#333333", bgColor: "#F5F5F5"},
+  {borderColor: "yellow", textColor: "white"},
+  {borderColor: "  ", textColor: " ", bgColor: " "},
   {borderColor: "#50C878", textColor: "#000000", bgColor: "#FFFFE0"},
   {borderColor: "#FFD700", textColor: "#2C2C2C", bgColor: "#FFF8DC"},
   {borderColor: "#6A0DAD", textColor: "#FFFFFF", bgColor: "#232323"},
   {borderColor: "#E63946", textColor: "#1D3557", bgColor: "#F1FAEE"},
   {borderColor: "#264653", textColor: "#E76F51", bgColor: "#F4A261"},
   {borderColor: "#D81159", textColor: "#FFCAD4", bgColor: "#2B2D42"},
-  {borderColor: "#00A896", textColor: "#F8F9FA", bgColor: "#05668D"},
- {borderColor:"#C9A227", textColor: "#3B3B3B", 	bgColor: "#F8F4E3"},
- {borderColor:"#DB3A34", textColor: "#FFFFFF", 	bgColor: "#22223B"},
+  {borderColor: "#00A896", textColor: "#F8F9FA",  bgColor: "#05668D"},
+  {borderColor:"#C9A227", textColor: "#3B3B3B",   bgColor: "#F8F4E3"},
+  {borderColor:"#DB3A34", textColor: "#FFFFFF",   bgColor: "#22223B"},
   {borderColor:"#2D6A4F", textColor: "#FFE8D6", 	bgColor: "#B5838D"},
   {borderColor:"#EE4266", textColor: "#FFEDDA", 	bgColor: "#540B0E"},
   {borderColor:"#1B998B", textColor: "#F8F1F1", 	bgColor: "#A4036F"},
