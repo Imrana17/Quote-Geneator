@@ -118,6 +118,13 @@ btn.addEventListener('click', function(){
     header.style.borderColor = headStyles[randomHead].borderColor;
     header.style.color = headStyles[randomHead].textColor;
     header.style.backgroundColor = headStyles[randomHead].bgColor;
+
+    let Random = Math.floor(Math.random() * quotes.length);
+    let randomhead = Math.floor(Math.random() * headStyles.length);
+    button.style.borderColor = headStyles[randomhead].borderColor;
+    button.style.color = headStyles[randomhead].textColor;
+    button.style.backgroundColor = headStyles[randomhead].bgColor;
+
     quote.innerText = quotes[random].quote;
     author.innerText = quotes[random].author;
 
