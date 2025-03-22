@@ -5,13 +5,11 @@
 3.Math Object()
 4.innerText
 */
-
-let btn = document.querySelector('#new-quote');
-let quote = document.querySelector('.quote');
-let author = document.querySelector('.author');
-let header = document.querySelector('.header');
 let mainContent = document.querySelector('.main-content');
-let button = document.querySelector('.new-quote');
+let quote = document.querySelector('.quote');
+let header = document.querySelector('.header');
+let textArea = document.querySelector('.text-area');
+let author = document.querySelector('.author');
 
 // List of quotes and authors
 const quotes = [
@@ -78,54 +76,66 @@ const quotes = [
 
 ];
 
+setInterval(
+
+  function(){
+     let random = Math.floor(Math.random() * quotes.length);
+     quote.innerText = quotes[random].quote;
+     author.innerText = quotes[random].author;
+ 
+ 
+ }, 10000);
+
 
 const headStyles = [
-  {borderColor: "yellow", textColor: "white"},
-  {borderColor: "  ", textColor: " ", bgColor: " "},
-  {borderColor: "#50C878", textColor: "#000000", bgColor: "#FFFFE0"},
-  {borderColor: "#FFD700", textColor: "#2C2C2C", bgColor: "#FFF8DC"},
-  {borderColor: "#6A0DAD", textColor: "#FFFFFF", bgColor: "#232323"},
-  {borderColor: "#E63946", textColor: "#1D3557", bgColor: "#F1FAEE"},
-  {borderColor: "#264653", textColor: "#E76F51", bgColor: "#F4A261"},
-  {borderColor: "#D81159", textColor: "#FFCAD4", bgColor: "#2B2D42"},
-  {borderColor: "#00A896", textColor: "#F8F9FA",  bgColor: "#05668D"},
-  {borderColor:"#C9A227", textColor: "#3B3B3B",   bgColor: "#F8F4E3"},
-  {borderColor:"#DB3A34", textColor: "#FFFFFF",   bgColor: "#22223B"},
-  {borderColor:"#2D6A4F", textColor: "#FFE8D6", 	bgColor: "#B5838D"},
-  {borderColor:"#EE4266", textColor: "#FFEDDA", 	bgColor: "#540B0E"},
-  {borderColor:"#1B998B", textColor: "#F8F1F1", 	bgColor: "#A4036F"},
-  {borderColor:"#006D77", textColor: "#FFDDD2", 	bgColor: "#83C5BE"},
-  {borderColor:"#6A0572", textColor: "#F2F2F2", 	bgColor: "#1B1B1B"},
-  {borderColor:"#F77F00", textColor: "#03045E", 	bgColor: "#E5E5E5"},
-  {borderColor:"#BC4749", textColor: "#FAF3E0", 	bgColor: "#386641"},
-  {borderColor:"#7209B7", textColor: "#F8F9FA", 	bgColor: "#3A0CA3"},
-  {borderColor:"#6F1D1B", textColor: "#D8B4A0", 	bgColor: "#F5F3E7"},
-  {borderColor:"#1E3A8A", textColor: "#E0F2FE", 	bgColor: "#0F172A"},
-  {borderColor:"#FF6F61", textColor: "#2E2E2E", 	bgColor: "#FFF5E1"},
-  {borderColor:"#C084FC", textColor: "#312E81", 	bgColor: "#EDE9FE"},
-  {borderColor:"#F59E0B", textColor: "#1E293B", 	bgColor: "#FEF3C7"},
-  {borderColor:"#16A34A", textColor: "#FFFFFF", 	bgColor: "#1B4332"},
-  {borderColor:"#9333EA", textColor: "#FDE68A", 	bgColor: "#581C87"},
-  {borderColor:"#DC2626", textColor: "#FAFAFA", 	bgColor: "#7F1D1D"},
-  {borderColor:"#15803D", textColor: "#FFFBEB", 	bgColor: "#14532D"},
-  {borderColor:"#7E22CE", textColor: "#E0E7FF", 	bgColor: "#4C1D95"},
-  {borderColor:"#0D9488", textColor: "#FAFAFA", 	bgColor: "#164E63"},  
+  {borderColor: "yellow", textColor: "white", bgColor: "orange ", boxShadow: " 0 0 10px yellow"},
+  {borderColor: "blue ", textColor: "grey ", bgColor: "purple", boxShadow: "0 0 10px blue"},
+  {borderColor: "#50C878", textColor: "#000000", bgColor: "#FFFFE0", boxShadow: "0 0 10px #50C878"},
+  {borderColor: "#FFD700", textColor: "#2C2C2C", bgColor: "#FFF8DC", boxShadow: " 0 0 10px #FFD700"},
+  {borderColor: "#6A0DAD", textColor: "#FFFFFF", bgColor: "#232323", boxShadow: " 0 0 10px #6A0DAD"},
+  {borderColor: "#E63946", textColor: "#1D3557", bgColor: "#F1FAEE", boxShadow: " 0 0 10px #E63946" },
+  {borderColor: "#264653", textColor: "#E76F51", bgColor: "#F4A261", boxShadow: " 0 0 10px #264653"},
+  {borderColor: "#D81159", textColor: "#FFCAD4", bgColor: "#2B2D42", boxShadow: " 0 0 10px #D81159"},
+  {borderColor: "#00A896", textColor: "#F8F9FA",  bgColor: "#05668D", boxShadow: " 0 0 10px #00A896"},
+  {borderColor:"#C9A227", textColor: "#3B3B3B",   bgColor: "#F8F4E3", boxShadow:"0 0 10px #C9A227" },
+  {borderColor:"#DB3A34", textColor: "#FFFFFF",   bgColor: "#22223B", boxShadow:"0 0 10px #DB3A34"},
+  {borderColor:"#2D6A4F", textColor: "#FFE8D6", 	bgColor: "#B5838D", boxShadow:" 0 0 10px #2D6A4F"},
+  {borderColor:"#EE4266", textColor: "#FFEDDA", 	bgColor: "#540B0E", boxShadow:" 0 0 10px #EE4266"},
+  {borderColor:"#1B998B", textColor: "#F8F1F1", 	bgColor: "#A4036F", boxShadow:" 0 0 10px #1B998B"},
+  {borderColor:"#006D77", textColor: "#FFDDD2", 	bgColor: "#83C5BE", boxShadow:" 0 0 10px #006D77" },
+  {borderColor:"#6A0572", textColor: "#F2F2F2", 	bgColor: "#1B1B1B", boxShadow:"0 0 10px #6A0572" },
+  {borderColor:"#F77F00", textColor: "#03045E", 	bgColor: "#E5E5E5", boxShadow:"0 0 10px #F77F00" },
+  {borderColor:"#BC4749", textColor: "#FAF3E0", 	bgColor: "#386641", boxShadow:"0 0 10px #BC4749"},
+  {borderColor:"#7209B7", textColor: "#F8F9FA", 	bgColor: "#3A0CA3", boxShadow:"0 0 10px #7209B7"},
+  {borderColor:"#6F1D1B", textColor: "#D8B4A0", 	bgColor: "#F5F3E7", boxShadow:"0 0 10px #6F1D1B"},
+  {borderColor:"#1E3A8A", textColor: "#E0F2FE", 	bgColor: "#0F172A", boxShadow:"0 0 10px #1E3A8A" },
+  {borderColor:"#FF6F61", textColor: "#2E2E2E", 	bgColor: "#FFF5E1", boxShadow:"0 0 10px #FF6F61"},
+  {borderColor:"#C084FC", textColor: "#312E81", 	bgColor: "#EDE9FE", boxShadow:"0 0 10px #C084FC"},
+  {borderColor:"#F59E0B", textColor: "#1E293B", 	bgColor: "#FEF3C7", boxShadow:"0 0 10px #F59E0B"},
+  {borderColor:"#16A34A", textColor: "#FFFFFF", 	bgColor: "#1B4332", boxShadow:"0 0 10px #16A34A"},
+  {borderColor:"#9333EA", textColor: "#FDE68A", 	bgColor: "#581C87", boxShadow:"0 0 10px #9333EA"},
+  {borderColor:"#DC2626", textColor: "#FAFAFA", 	bgColor: "#7F1D1D", boxShadow:"0 0 10px #DC2626"},
+  {borderColor:"#15803D", textColor: "#FFFBEB", 	bgColor: "#14532D", boxShadow:"0 0 10px #15803D"},
+  {borderColor:"#7E22CE", textColor: "#E0E7FF", 	bgColor: "#4C1D95", boxShadow:"0 0 10px #7E22CE"},
+  {borderColor:"#0D9488", textColor: "#FAFAFA", 	bgColor: "#164E63", boxShadow:"0 0 10px #0D9488"},  
 ];
 
-btn.addEventListener('click', function(){
-    let random = Math.floor(Math.random() * quotes.length);
-    let randomHead = Math.floor(Math.random() * headStyles.length);
-    header.style.borderColor = headStyles[randomHead].borderColor;
-    header.style.color = headStyles[randomHead].textColor;
-    header.style.backgroundColor = headStyles[randomHead].bgColor;
 
-    let Random = Math.floor(Math.random() * quotes.length);
-    let randomhead = Math.floor(Math.random() * headStyles.length);
-    button.style.borderColor = headStyles[randomhead].borderColor;
-    button.style.color = headStyles[randomhead].textColor;
-    button.style.backgroundColor = headStyles[randomhead].bgColor;
 
-    quote.innerText = quotes[random].quote;
-    author.innerText = quotes[random].author;
+setInterval(
+function(){
+  let randomHead = Math.floor(Math.random() * headStyles.length);
+    
+  header.style.boxShadow = headStyles[randomHead].boxShadow;
+      header.style.color = headStyles[randomHead].textColor;
+      header.style.backgroundColor = headStyles[randomHead].bgColor;
 
-})
+      textArea.style.color = headStyles[randomHead].textColor;
+     author.style.color = headStyles[randomHead].borderColor;
+     mainContent.style.backgroundColor = headStyles[randomHead].bgColor;
+
+     mainContent.style.boxShadow = headStyles[randomHead].boxShadow;
+}, 10000
+
+);
+
