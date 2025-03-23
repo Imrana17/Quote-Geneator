@@ -84,17 +84,46 @@ setInterval(
      author.innerText = quotes[random].author;
  
  
- }, 10000);
+ }, 3000);
 
 
 const headStyles = [
-  {borderColor: "yellow", textColor: "white", bgColor: "orange ", boxShadow: " 0 0 10px yellow"},
-  {borderColor: "blue ", textColor: "grey ", bgColor: "purple", boxShadow: "0 0 10px blue"},
-  {borderColor: "#50C878", textColor: "#000000", bgColor: "#FFFFE0", boxShadow: "0 0 10px #50C878"},
-  {borderColor: "#FFD700", textColor: "#2C2C2C", bgColor: "#FFF8DC", boxShadow: " 0 0 10px #FFD700"},
-  {borderColor: "#6A0DAD", textColor: "#FFFFFF", bgColor: "#232323", boxShadow: " 0 0 10px #6A0DAD"},
-  {borderColor: "#E63946", textColor: "#1D3557", bgColor: "#F1FAEE", boxShadow: " 0 0 10px #E63946" },
-  {borderColor: "#264653", textColor: "#E76F51", bgColor: "#F4A261", boxShadow: " 0 0 10px #264653"},
+
+{borderColor: "yellow", 
+  textColor: "Black Blue", 
+  bgColor: "Blender", 
+  boxShadow: " 0 0 10px yellow"},
+  
+  {borderColor: "mediumblue", 
+  textColor: "black", 
+  bgColor: "oldlace", 
+  boxShadow: "0 0 10px mediumblue"},
+
+  {borderColor: "navy", 
+  textColor: "#00000", 
+  bgColor: "snow", 
+  boxShadow: "0 0 10px navy"},
+
+  {borderColor: "lime", 
+  textColor: "#2C2C2C", 
+  bgColor: "#FFF8DC", 
+  boxShadow: " 0 0 10px lime"},
+  
+  {borderColor: "deeppink", 
+  textColor: "black", 
+  bgColor: "Silk", 
+  boxShadow: " 0 0 10px deeppink"},
+
+  {borderColor: "chartreuse", 
+  textColor: "#1D3557", 
+  bgColor: "#F1FAEE", 
+  boxShadow: " 0 0 10px chartreuse" },
+  
+  {borderColor: "indigo", 
+  textColor: "True Black", 
+  bgColor: "antiquewhite", 
+  boxShadow: " 0 0 10px indigo"},
+   /*
   {borderColor: "#D81159", textColor: "#FFCAD4", bgColor: "#2B2D42", boxShadow: " 0 0 10px #D81159"},
   {borderColor: "#00A896", textColor: "#F8F9FA",  bgColor: "#05668D", boxShadow: " 0 0 10px #00A896"},
   {borderColor:"#C9A227", textColor: "#3B3B3B",   bgColor: "#F8F4E3", boxShadow:"0 0 10px #C9A227" },
@@ -118,6 +147,7 @@ const headStyles = [
   {borderColor:"#15803D", textColor: "#FFFBEB", 	bgColor: "#14532D", boxShadow:"0 0 10px #15803D"},
   {borderColor:"#7E22CE", textColor: "#E0E7FF", 	bgColor: "#4C1D95", boxShadow:"0 0 10px #7E22CE"},
   {borderColor:"#0D9488", textColor: "#FAFAFA", 	bgColor: "#164E63", boxShadow:"0 0 10px #0D9488"},  
+  */
 ];
 
 
@@ -135,7 +165,7 @@ function(){
      mainContent.style.backgroundColor = headStyles[randomHead].bgColor;
 
      mainContent.style.boxShadow = headStyles[randomHead].boxShadow;
-}, 10000
+}, 3000
 
 );
 
