@@ -1,10 +1,3 @@
-// Key Concept for the Project
-/*
-1. docoment.querySelector()
-2. addEventListener()
-3.Math Object()
-4.innerText
-*/
 let mainContent = document.querySelector('.main-content');
 let quote = document.querySelector('.quote');
 let header = document.querySelector('.header');
@@ -88,96 +81,163 @@ setInterval(
 
 
 const headStyles = [
-/*
+
   {borderColor: "yellow", 
-  textColor: "Black Blue", 
+  textColor: "black", 
   bgColor: "Blender", 
-  boxShadow: " 0 0 10px yellow"},
+  boxShadow: "0 0 15px yellow"},
   
   {borderColor: "mediumblue", 
   textColor: "black", 
   bgColor: "oldlace", 
-  boxShadow: "0 0 10px mediumblue"},
+  boxShadow: "0 0 15px mediumblue"},
 
   {borderColor: "navy", 
-  textColor: "#00000", 
+  textColor: "black", 
   bgColor: "snow", 
-  boxShadow: "0 0 10px navy"},
+  boxShadow: "0 0 15px navy"},
 
   {borderColor: "lime", 
-  textColor: "#2C2C2C", 
+  textColor: "black", 
   bgColor: "#FFF8DC", 
-  boxShadow: " 0 0 10px lime"},
+  boxShadow: "0 0 15px lime"},
   
   {borderColor: "deeppink", 
-  textColor: "black", 
+  textColor: "white", 
   bgColor: "Silk", 
-  boxShadow: " 0 0 10px deeppink"},
+  boxShadow: "0 0 15px deeppink"},
 
   {borderColor: "chartreuse", 
-  textColor: "#1D3557", 
+  textColor: "black", 
   bgColor: "#F1FAEE", 
-  boxShadow: " 0 0 10px chartreuse" },
+  boxShadow: " 0 0 15px chartreuse" },
   
   {borderColor: "indigo", 
   textColor: "True Black", 
   bgColor: "antiquewhite", 
-  boxShadow: " 0 0 10px indigo"},
+  boxShadow: " 0 0 15px indigo"},
   
+ 
   {borderColor: "orchid", 
   textColor: "#FFCAD4", 
   bgColor: "#2B2D42", 
-  boxShadow: " 0 0 10px orchid"},
+  boxShadow: " 0 0 15px orchid"},
   
   {borderColor: "hotpink", 
   textColor: "#F8F9FA",  
   bgColor: "gold", 
-  boxShadow: " 0 0 10px hotpink"},
+  boxShadow: " 0 0 15px hotpink"},
 
   {borderColor:"rgb(230, 182, 28)", 
   textColor: "#3B3B3B",  
   bgColor: "#F8F4E3", 
-  boxShadow:"0 0 10px rgb(230, 182, 28)" },
+  boxShadow:"0 0 15px rgb(230, 182, 28)" },
 
   {borderColor:"purple", 
   textColor: "#FFFFFF",   
   bgColor: "#22223B", 
-  boxShadow:"0 0 10px purple"},
+  boxShadow:"0 0 15px purple"},
 
   {borderColor:"saddlebrown", 
   textColor: "black", 	
   bgColor: "bisque", 
-  boxShadow:" 0 0 10px saddlebrown"},
+  boxShadow:" 0 0 15px saddlebrown"},
   
   {borderColor:"#EE4266", 
   textColor: "#FFEDDA", 	
   bgColor: "#540B0E", 
-  boxShadow:" 0 0 10px #EE4266"},
+  boxShadow:" 0 0 15px #EE4266"},
 
   {borderColor:"Green", 
   textColor: "black",  
   bgColor: "khaki", 
-  boxShadow:" 0 0 10px Green"},
-  */
+  boxShadow:" 0 0 15px Green"},
   
-  {borderColor:"#006D77", textColor: "#FFDDD2", 	bgColor: "#83C5BE", boxShadow:" 0 0 10px #006D77" },
-  /*
-  {borderColor:"#6A0572", textColor: "#F2F2F2", 	bgColor: "#1B1B1B", boxShadow:"0 0 10px #6A0572" },
-  {borderColor:"#F77F00", textColor: "#03045E", 	bgColor: "#E5E5E5", boxShadow:"0 0 10px #F77F00" },
-  {borderColor:"#BC4749", textColor: "#FAF3E0", 	bgColor: "#386641", boxShadow:"0 0 10px #BC4749"},
-  {borderColor:"#7209B7", textColor: "#F8F9FA", 	bgColor: "#3A0CA3", boxShadow:"0 0 10px #7209B7"},
-  {borderColor:"#6F1D1B", textColor: "#D8B4A0", 	bgColor: "#F5F3E7", boxShadow:"0 0 10px #6F1D1B"},
-  {borderColor:"#1E3A8A", textColor: "#E0F2FE", 	bgColor: "#0F172A", boxShadow:"0 0 10px #1E3A8A" },
-  {borderColor:"#FF6F61", textColor: "#2E2E2E", 	bgColor: "#FFF5E1", boxShadow:"0 0 10px #FF6F61"},
-  {borderColor:"#C084FC", textColor: "#312E81", 	bgColor: "#EDE9FE", boxShadow:"0 0 10px #C084FC"},
-  {borderColor:"#F59E0B", textColor: "#1E293B", 	bgColor: "#FEF3C7", boxShadow:"0 0 10px #F59E0B"},
-  {borderColor:"#16A34A", textColor: "#FFFFFF", 	bgColor: "#1B4332", boxShadow:"0 0 10px #16A34A"},
-  {borderColor:"#9333EA", textColor: "#FDE68A", 	bgColor: "#581C87", boxShadow:"0 0 10px #9333EA"},
-  {borderColor:"#DC2626", textColor: "#FAFAFA", 	bgColor: "#7F1D1D", boxShadow:"0 0 10px #DC2626"},
-  {borderColor:"#15803D", textColor: "#FFFBEB", 	bgColor: "#14532D", boxShadow:"0 0 10px #15803D"},
-  {borderColor:"#7E22CE", textColor: "#E0E7FF", 	bgColor: "#4C1D95", boxShadow:"0 0 10px #7E22CE"},
-  {borderColor:"#0D9488", textColor: "#FAFAFA", 	bgColor: "#164E63", boxShadow:"0 0 10px #0D9488"},  
-  */
+  {borderColor:"blue", 
+  textColor: "#FFDDD2", 	
+  bgColor: "#83C5BE", 
+  boxShadow:" 0 0 15px blue" },
+
+
+ {borderColor:"#6A0572", 
+  textColor: "#F2F2F2", 	
+  bgColor: "#1B1B1B", 
+  boxShadow:"0 0 15px #6A0572" },
+
+  
+  {borderColor:"#F77F00", 
+  textColor: "black", 	
+  bgColor: "#E5E5E5", 
+  boxShadow:"0 0 15px #F77F00" },
+  
+ {borderColor:"lime", 
+  textColor: "darkgreen", 	
+  bgColor: "lightgreen", 
+  boxShadow:"0 0 15px lime"},
+
+  {borderColor:"darkmagenta", 
+  textColor: "#F8F9FA", 	
+  bgColor: "dodgerblue", 
+  boxShadow:"0 0 15px darkmagenta"},
+
+  {borderColor:"turquoise", 
+  textColor: "black", 	
+  bgColor: "white", 
+  boxShadow:"0 0 15px turquoise"},
+  
+  {borderColor:"#1E3A8A", 
+  textColor: "#E0F2FE", 	
+  bgColor: "#0F172A", 
+  boxShadow:"0 0 15px #1E3A8A" },
+
+  
+  {borderColor:"#00FFFF", 
+  textColor: "black", 	
+  bgColor: "#FFF5E1", 
+  boxShadow:"0 0 15px #00FFFF"},
+
+  {borderColor:"#39FF14", 
+  textColor: "black", 	
+  bgColor: "ivory", 
+  boxShadow:"0 0 15px #39FF14"},
+
+  {borderColor:"#FF10F0", 
+   textColor: "#1E293B", 	
+   bgColor: "#FEF3C7", 
+   boxShadow:"0 0 15px #FF10F0"},
+
+  {borderColor:"#16A34A", 
+  textColor: "#FFFFFF", 	
+  bgColor: "#1B4332", 
+  boxShadow:"0 0 15px #16A34A"},
+  
+  {borderColor:"rgb(43, 255, 0)", 
+  textColor: "#FFFFFF", 	
+  bgColor: "#581C87", 
+  boxShadow:"0 0 15px rgb(43, 255, 0)"},
+
+  {borderColor:"darkmagenta", 
+   textColor: "#FAFAFA", 	
+   bgColor: "violet", 
+   boxShadow:"0 0 15px darkmagenta"},
+   
+  {borderColor:" rgb(37, 230, 104)", 
+   textColor: "#FFFBEB", 	
+   bgColor: "#14532D", 
+   boxShadow:"0 0 15px rgb(37, 230, 104)"},
+
+
+  {borderColor:"rgb(148, 36, 247)", 
+   textColor: "#E0E7FF", 	
+   bgColor: "#4C1D95", 
+   boxShadow:"0 0 15px rgb(148, 36, 247)"},
+
+  
+  {borderColor:"#0D9488", 
+  textColor: "#FAFAFA", 	
+  bgColor: "#164E63", 
+  boxShadow:"0 0 15px #0D9488"},  
+  
 ];
 
 
@@ -198,4 +258,3 @@ function(){
 }, 3000
 
 );
-
