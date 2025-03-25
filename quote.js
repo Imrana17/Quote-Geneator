@@ -88,8 +88,8 @@ setInterval(
 
 
 const headStyles = [
-
-{borderColor: "yellow", 
+/*
+  {borderColor: "yellow", 
   textColor: "Black Blue", 
   bgColor: "Blender", 
   boxShadow: " 0 0 10px yellow"},
@@ -123,15 +123,45 @@ const headStyles = [
   textColor: "True Black", 
   bgColor: "antiquewhite", 
   boxShadow: " 0 0 10px indigo"},
-   /*
-  {borderColor: "#D81159", textColor: "#FFCAD4", bgColor: "#2B2D42", boxShadow: " 0 0 10px #D81159"},
-  {borderColor: "#00A896", textColor: "#F8F9FA",  bgColor: "#05668D", boxShadow: " 0 0 10px #00A896"},
-  {borderColor:"#C9A227", textColor: "#3B3B3B",   bgColor: "#F8F4E3", boxShadow:"0 0 10px #C9A227" },
-  {borderColor:"#DB3A34", textColor: "#FFFFFF",   bgColor: "#22223B", boxShadow:"0 0 10px #DB3A34"},
-  {borderColor:"#2D6A4F", textColor: "#FFE8D6", 	bgColor: "#B5838D", boxShadow:" 0 0 10px #2D6A4F"},
-  {borderColor:"#EE4266", textColor: "#FFEDDA", 	bgColor: "#540B0E", boxShadow:" 0 0 10px #EE4266"},
-  {borderColor:"#1B998B", textColor: "#F8F1F1", 	bgColor: "#A4036F", boxShadow:" 0 0 10px #1B998B"},
+  
+  {borderColor: "orchid", 
+  textColor: "#FFCAD4", 
+  bgColor: "#2B2D42", 
+  boxShadow: " 0 0 10px orchid"},
+  
+  {borderColor: "hotpink", 
+  textColor: "#F8F9FA",  
+  bgColor: "gold", 
+  boxShadow: " 0 0 10px hotpink"},
+
+  {borderColor:"rgb(230, 182, 28)", 
+  textColor: "#3B3B3B",  
+  bgColor: "#F8F4E3", 
+  boxShadow:"0 0 10px rgb(230, 182, 28)" },
+
+  {borderColor:"purple", 
+  textColor: "#FFFFFF",   
+  bgColor: "#22223B", 
+  boxShadow:"0 0 10px purple"},
+
+  {borderColor:"saddlebrown", 
+  textColor: "black", 	
+  bgColor: "bisque", 
+  boxShadow:" 0 0 10px saddlebrown"},
+  
+  {borderColor:"#EE4266", 
+  textColor: "#FFEDDA", 	
+  bgColor: "#540B0E", 
+  boxShadow:" 0 0 10px #EE4266"},
+
+  {borderColor:"Green", 
+  textColor: "black",  
+  bgColor: "khaki", 
+  boxShadow:" 0 0 10px Green"},
+  */
+  
   {borderColor:"#006D77", textColor: "#FFDDD2", 	bgColor: "#83C5BE", boxShadow:" 0 0 10px #006D77" },
+  /*
   {borderColor:"#6A0572", textColor: "#F2F2F2", 	bgColor: "#1B1B1B", boxShadow:"0 0 10px #6A0572" },
   {borderColor:"#F77F00", textColor: "#03045E", 	bgColor: "#E5E5E5", boxShadow:"0 0 10px #F77F00" },
   {borderColor:"#BC4749", textColor: "#FAF3E0", 	bgColor: "#386641", boxShadow:"0 0 10px #BC4749"},
