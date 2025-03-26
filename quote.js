@@ -77,7 +77,7 @@ setInterval(
      author.innerText = quotes[random].author;
  
  
- }, 3000);
+ }, 10000);
 
 
 const headStyles = [
@@ -103,8 +103,8 @@ const headStyles = [
   boxShadow: "0 0 15px lime"},
   
   {borderColor: "deeppink", 
-  textColor: "white", 
-  bgColor: "Silk", 
+  textColor: "black", 
+  bgColor: "white", 
   boxShadow: "0 0 15px deeppink"},
 
   {borderColor: "chartreuse", 
@@ -119,23 +119,23 @@ const headStyles = [
   
  
   {borderColor: "orchid", 
-  textColor: "#FFCAD4", 
-  bgColor: "#2B2D42", 
+  textColor: "black", 
+  bgColor: "white", 
   boxShadow: " 0 0 15px orchid"},
   
   {borderColor: "hotpink", 
-  textColor: "#F8F9FA",  
-  bgColor: "gold", 
+  textColor: "black",  
+  bgColor: "white", 
   boxShadow: " 0 0 15px hotpink"},
 
   {borderColor:"rgb(230, 182, 28)", 
-  textColor: "#3B3B3B",  
-  bgColor: "#F8F4E3", 
+  textColor: "black",  
+  bgColor: "white", 
   boxShadow:"0 0 15px rgb(230, 182, 28)" },
 
   {borderColor:"purple", 
-  textColor: "#FFFFFF",   
-  bgColor: "#22223B", 
+  textColor: "black",   
+  bgColor: "white", 
   boxShadow:"0 0 15px purple"},
 
   {borderColor:"saddlebrown", 
@@ -144,8 +144,8 @@ const headStyles = [
   boxShadow:" 0 0 15px saddlebrown"},
   
   {borderColor:"#EE4266", 
-  textColor: "#FFEDDA", 	
-  bgColor: "#540B0E", 
+  textColor: "black", 	
+  bgColor: "white", 
   boxShadow:" 0 0 15px #EE4266"},
 
   {borderColor:"Green", 
@@ -154,30 +154,30 @@ const headStyles = [
   boxShadow:" 0 0 15px Green"},
   
   {borderColor:"blue", 
-  textColor: "#FFDDD2", 	
-  bgColor: "#83C5BE", 
+  textColor: "black", 	
+  bgColor: "white", 
   boxShadow:" 0 0 15px blue" },
 
 
  {borderColor:"#6A0572", 
-  textColor: "#F2F2F2", 	
-  bgColor: "#1B1B1B", 
+  textColor: "black", 	
+  bgColor: "white", 
   boxShadow:"0 0 15px #6A0572" },
 
   
   {borderColor:"#F77F00", 
   textColor: "black", 	
-  bgColor: "#E5E5E5", 
+  bgColor: "white", 
   boxShadow:"0 0 15px #F77F00" },
   
  {borderColor:"lime", 
-  textColor: "darkgreen", 	
-  bgColor: "lightgreen", 
+  textColor: "black", 	
+  bgColor: "white", 
   boxShadow:"0 0 15px lime"},
 
   {borderColor:"darkmagenta", 
-  textColor: "#F8F9FA", 	
-  bgColor: "dodgerblue", 
+  textColor: "black", 	
+  bgColor: "white", 
   boxShadow:"0 0 15px darkmagenta"},
 
   {borderColor:"turquoise", 
@@ -186,8 +186,8 @@ const headStyles = [
   boxShadow:"0 0 15px turquoise"},
   
   {borderColor:"#1E3A8A", 
-  textColor: "#E0F2FE", 	
-  bgColor: "#0F172A", 
+  textColor: "black", 	
+  bgColor: "white", 
   boxShadow:"0 0 15px #1E3A8A" },
 
   
@@ -202,40 +202,40 @@ const headStyles = [
   boxShadow:"0 0 15px #39FF14"},
 
   {borderColor:"#FF10F0", 
-   textColor: "#1E293B", 	
+   textColor: "black", 	
    bgColor: "#FEF3C7", 
    boxShadow:"0 0 15px #FF10F0"},
 
   {borderColor:"#16A34A", 
-  textColor: "#FFFFFF", 	
-  bgColor: "#1B4332", 
+  textColor: "black", 	
+  bgColor: "white", 
   boxShadow:"0 0 15px #16A34A"},
   
   {borderColor:"rgb(43, 255, 0)", 
-  textColor: "#FFFFFF", 	
-  bgColor: "#581C87", 
+  textColor: "black", 	
+  bgColor: "white", 
   boxShadow:"0 0 15px rgb(43, 255, 0)"},
 
   {borderColor:"darkmagenta", 
-   textColor: "#FAFAFA", 	
-   bgColor: "violet", 
+   textColor: "black", 	
+   bgColor: "white", 
    boxShadow:"0 0 15px darkmagenta"},
    
   {borderColor:" rgb(37, 230, 104)", 
-   textColor: "#FFFBEB", 	
-   bgColor: "#14532D", 
+   textColor: "black", 	
+   bgColor: "white", 
    boxShadow:"0 0 15px rgb(37, 230, 104)"},
 
 
   {borderColor:"rgb(148, 36, 247)", 
-   textColor: "#E0E7FF", 	
-   bgColor: "#4C1D95", 
+   textColor: "black", 	
+   bgColor: "white", 
    boxShadow:"0 0 15px rgb(148, 36, 247)"},
 
   
   {borderColor:"#0D9488", 
-  textColor: "#FAFAFA", 	
-  bgColor: "#164E63", 
+  textColor: "black", 	
+  bgColor: "white", 
   boxShadow:"0 0 15px #0D9488"},  
   
 ];
@@ -255,6 +255,6 @@ function(){
      mainContent.style.backgroundColor = headStyles[randomHead].bgColor;
 
      mainContent.style.boxShadow = headStyles[randomHead].boxShadow;
-}, 3000
+}, 10000
 
 );
